@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        double total, kgA, kgE, kgD, kgM, kgP, Armut=2.14, Elma=3.67, Domates=1.11, Muz=0.95, Patlican=5.00;
+        Scanner inp = new Scanner(System.in);
+        System.out.print("Armut Kaç Kilo ? :");
+        kgA = inp.nextDouble();
+        System.out.print("Elma Kaç Kilo ? :");
+        kgE = inp.nextDouble();
+        System.out.print("Domates Kaç Kilo ? :");
+        kgD = inp.nextDouble();
+        System.out.print("Muz Kaç Kilo ? :");
+        kgM = inp.nextDouble();
+        System.out.print("Patlıcan Kaç Kilo ? :");
+        kgP = inp.nextDouble();
+
+        total = (kgA*Armut) + (kgE*Elma) + (kgD*Domates) + (kgM*Muz) + (kgP*Patlican);
+        System.out.println("Toplam Tutar : " + total + " TL");
+
+    }
+}
